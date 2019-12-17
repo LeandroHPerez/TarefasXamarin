@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppTarefasXamarin.Paginas.DetalharTarefa">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Dados da tarefa" FontSize="20" HorizontalOptions="Center" FontAttributes="Bold" />
+
+
+            <Label Text="{Binding Nome}" FontSize="18" HorizontalOptions="Start" FontAttributes="Bold" />
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Descrição: "  FontAttributes="Bold"/>
+                <Label Text="{Binding Descricao}" FontSize="16" HorizontalOptions="Start" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Data de finalização: "  FontAttributes="Bold"/>
+                <Label Text="{Binding DataFinalizacao}" FontAttributes="Bold" HorizontalOptions="Center" TextColor="Red" />
+            </StackLayout>
+
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Tipo de prioridade: "  FontAttributes="Bold"/>
+                <Picker x:Name="pickerPrioridade"
+                    TextColor="Blue"
+                    IsEnabled="False"
+                >
+                    <Picker.Items>
+                        <x:String>Urgente</x:String>
+                        <x:String>Alta</x:String>
+                        <x:String>Média</x:String>
+                        <x:String>Baixa</x:String>
+                    </Picker.Items>
+                </Picker>
+            </StackLayout>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

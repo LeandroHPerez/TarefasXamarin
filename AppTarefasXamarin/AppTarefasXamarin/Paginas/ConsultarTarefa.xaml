@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppTarefasXamarin.Paginas.ConsultarTarefa">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Tarefas" FontSize="24" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Adicionar" Clicked="GoCadastro" />
+            </StackLayout>
+            <Entry Placeholder="Pesquisar" TextChanged="PesquisarAction"/>
+            <Label Text="Registros:" x:Name="lblCount"/>
+
+            <ListView x:Name="ListaTarefas" HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="250" />
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"></RowDefinition>
+                                </Grid.RowDefinitions>
+                                <StackLayout Grid.Column="0">
+                                    <Label  Text="{Binding Nome}" FontAttributes="Bold" />
+                                    <Label  Text="{Binding Descricao}" FontSize="10"/>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="Tipo de prioridade: "  FontAttributes="Bold"/>
+                                        <Label  Text="{Binding PrioridadeString}" />
+                                    </StackLayout>
+                                    <Label  Text="{Binding DataFinalizacao}"  />                                    
+                                </StackLayout>
+
+
+
+                                <StackLayout Grid.Column="1" Orientation="Horizontal">
+                                    <Label Text="Finalizar" IsVisible="{Binding IsEmAndamento}">
+                                        <Label.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="FinalizarAction" CommandParameter="{Binding .} " />
+                                        </Label.GestureRecognizers>
+                                    </Label>
+                                    <Label Text="|" IsVisible="{Binding IsEmAndamento}" />
+                                    <Label Text="Detalhar">
+                                        <Label.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="MaisDetalheAction" CommandParameter="{Binding .}" />
+                                        </Label.GestureRecognizers>
+                                    </Label>
+                                    <Label Text="|"  IsVisible="{Binding IsEmAndamento}" />
+                                    <Label Text="Editar"  IsVisible="{Binding IsEmAndamento}">
+                                        <Label.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="EditarAction" CommandParameter="{Binding .}" />
+                                        </Label.GestureRecognizers>
+                                    </Label>
+                                    <Label Text="|" />
+                                    <Label Text="Excluir">
+                                        <Label.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="ExcluirAction" CommandParameter="{Binding .}" />
+                                        </Label.GestureRecognizers>
+                                    </Label>
+                                </StackLayout>
+
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

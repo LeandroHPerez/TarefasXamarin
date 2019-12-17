@@ -1,0 +1,16 @@
+C:\Projeto Xamarin\AppTarefasXamarin\AppTarefasXamarin\AppTarefasXamarin\bin\Debug\netstandard2.0\AppTarefasXamarin.deps.json
+C:\Projeto Xamarin\AppTarefasXamarin\AppTarefasXamarin\AppTarefasXamarin\bin\Debug\netstandard2.0\AppTarefasXamarin.dll
+C:\Projeto Xamarin\AppTarefasXamarin\AppTarefasXamarin\AppTarefasXamarin\obj\Debug\netstandard2.0\AppTarefasXamarin.csprojAssemblyReference.cache
+C:\Projeto Xamarin\AppTarefasXamarin\AppTarefasXamarin\AppTarefasXamarin\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Projeto Xamarin\AppTarefasXamarin\AppTarefasXamarin\AppTarefasXamarin\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Projeto Xamarin\AppTarefasXamarin\AppTarefasXamarin\AppTarefasXamarin\obj\Debug\netstandard2.0\AppTarefasXamarin.csproj.CoreCompileInputs.cache
+C:\Projeto Xamarin\AppTarefasXamarin\AppTarefasXamarin\AppTarefasXamarin\obj\Debug\netstandard2.0\AppTarefasXamarin.AssemblyInfoInputs.cache
+C:\Projeto Xamarin\AppTarefasXamarin\AppTarefasXamarin\AppTarefasXamarin\obj\Debug\netstandard2.0\AppTarefasXamarin.AssemblyInfo.cs
+C:\Projeto Xamarin\AppTarefasXamarin\AppTarefasXamarin\AppTarefasXamarin\bin\Debug\netstandard2.0\AppTarefasXamarin.pdb
+C:\Projeto Xamarin\AppTarefasXamarin\AppTarefasXamarin\AppTarefasXamarin\obj\Debug\netstandard2.0\Paginas\CadastrarTarefa.xaml.g.cs
+C:\Projeto Xamarin\AppTarefasXamarin\AppTarefasXamarin\AppTarefasXamarin\obj\Debug\netstandard2.0\Paginas\ConsultarTarefa.xaml.g.cs
+C:\Projeto Xamarin\AppTarefasXamarin\AppTarefasXamarin\AppTarefasXamarin\obj\Debug\netstandard2.0\Paginas\DetalharTarefa.xaml.g.cs
+C:\Projeto Xamarin\AppTarefasXamarin\AppTarefasXamarin\AppTarefasXamarin\obj\Debug\netstandard2.0\Paginas\EditarTarefa.xaml.g.cs
+C:\Projeto Xamarin\AppTarefasXamarin\AppTarefasXamarin\AppTarefasXamarin\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Projeto Xamarin\AppTarefasXamarin\AppTarefasXamarin\AppTarefasXamarin\obj\Debug\netstandard2.0\AppTarefasXamarin.dll
+C:\Projeto Xamarin\AppTarefasXamarin\AppTarefasXamarin\AppTarefasXamarin\obj\Debug\netstandard2.0\AppTarefasXamarin.pdb

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppTarefasXamarin.Paginas.CadastrarTarefa">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Cadastro tarefa" FontSize="24" />
+            </StackLayout>
+            <ScrollView>
+                <StackLayout>
+                    <Entry x:Name="Nome" Placeholder="Nome" />
+
+
+                    <Label Text="Descrição da tarefa" />
+                    <Editor x:Name="Descricao" HeightRequest="200" />
+
+                    <Picker x:Name="pickerPrioridade"
+                    Title="Selecione a Prioridade"
+                    TextColor="Blue"
+                    SelectedIndex="0"
+                    SelectedIndexChanged="ActionMudarIndex"
+                >
+                        <Picker.Items>
+                            <x:String>Urgente</x:String>
+                            <x:String>Alta</x:String>
+                            <x:String>Média</x:String>
+                            <x:String>Baixa</x:String>
+                        </Picker.Items>
+                    </Picker>
+
+                    <Button Text="Salvar" Clicked="SalvarAction"/>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

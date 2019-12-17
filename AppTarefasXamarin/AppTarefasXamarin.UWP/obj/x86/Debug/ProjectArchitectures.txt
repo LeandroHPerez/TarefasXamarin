@@ -1,0 +1,1 @@
+C:\Projeto Xamarin\AppTarefasXamarin\AppTarefasXamarin\AppTarefasXamarin.UWP\AppTarefasXamarin.UWP.csproj;x86
